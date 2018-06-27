@@ -21,8 +21,7 @@ class Song
   end
 
   def self.artists
-
-     @@artists
+     @@artists.delete_if {|a| @@artists.include?(a)}
   end
 
 

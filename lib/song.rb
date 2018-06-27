@@ -21,8 +21,8 @@ class Song
   end
 
   def self.artists
-    binding.pry 
-     @@artists.delete_if {|a| @@artists.include?(a)}
+    binding.pry
+     @@artists.delete_if {|a| @@artists.include?(\a{2,}\)}
   end
 
 
